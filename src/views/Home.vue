@@ -39,7 +39,6 @@
 <script>
 // @ is an alias to /src
 import QuizItem from "../components/QuizItem.vue";
-import Firebase from "firebase";
 export default {
   name: "Home",
   data() {
