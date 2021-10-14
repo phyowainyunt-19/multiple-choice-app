@@ -16,18 +16,16 @@
       </md-toolbar>
 
       <md-list>
-        <router-link to="/search">
-          <md-list-item @click="showNavigation = false">
+          <md-list-item class="list-item">
             <md-icon>search</md-icon>
             <span class="md-list-item-text">Search</span>
           </md-list-item>
-        </router-link>
-        <router-link to="/add">
-          <md-list-item @click="showNavigation = false">
+          
+          <md-list-item class="list-item">
             <md-icon>add</md-icon>
             <span class="md-list-item-text">Contribute</span>
           </md-list-item>
-        </router-link>
+
       </md-list>
     </md-drawer>
     <md-content>
@@ -82,6 +80,10 @@ body {
       color: #42b983;
     }
   }
+}
+
+.list-item{
+  cursor: not-allowed;
 }
 
 .md-title {

@@ -12,7 +12,7 @@
 
     <md-drawer :md-active.sync="showNavigation" md-swipeable>
       <md-toolbar class="md-transparent" md-elevation="0">
-        <span class="md-title"></span>
+        <md-icon>public</md-icon>
       </md-toolbar>
 
       <md-list>

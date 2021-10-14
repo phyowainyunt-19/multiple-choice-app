@@ -33,21 +33,21 @@ const routes = [{
     //     component: Signup
     // },
 
-    {
-        name: 'Add',
-        path: '/add',
-        component: Add
-    },
-    {
-        name: 'ViewAll',
-        path: '/search',
-        component: Search
-    },
-    {
-        name: 'Admin',
-        path: '/admin',
-        component: Admin
-    }
+    // {
+    //     name: 'Add',
+    //     path: '/add',
+    //     component: Add
+    // },
+    // {
+    //     name: 'ViewAll',
+    //     path: '/search',
+    //     component: Search
+    // },
+    // {
+    //     name: 'Admin',
+    //     path: '/admin',
+    //     component: Admin
+    // }
 ]
 const
     router = new VueRouter({
