@@ -8,13 +8,6 @@
       >
         <md-toolbar class="md-accent md-dense border-rounded">
           <h3 class="md-title">Question # {{ index }}</h3>
-          <div class="md-toolbar-section-end">
-            <router-link :to="{ name: 'Add', params: { id: item['.key'] } }">
-              <md-button>
-                <md-icon class="md-dense">edit</md-icon>
-              </md-button>
-            </router-link>
-          </div>
         </md-toolbar>
         <md-card>
           <md-card-content class="text">{{ item.Question }}</md-card-content>
