@@ -1,0 +1,24 @@
+<section class="view-all">
+    <md-field md-clearable>
+        <label>Search Question...</label>
+        <md-input v-model="selectedQuestion" @keydown="filterQuestions"></md-input>
+    </md-field>
+
+    <md-card v-for="item of filteredItems" :key="item['.key']">
+        <md-tooltip style="width: min-content;">{{item.Question}}</md-tooltip>
+        <md-card-content class="mques">
+            {{item.Question}}
+        </md-card-content>
+        <md-card-actions>
+            <router-link :to="{name: 'Add', params: {id: item['.key']} }">
+                <md-button class="md-dense">Edit</md-button>
+            </router-link>
+        </md-card-actions>
+    </md-card>
+
+    <div class="footer">
+        <md-button class="md-raised md-primary">
+            <router-link to="/add">+ New</router-link>
+        </md-button>
+    </div>
+</section>

@@ -1,0 +1,96 @@
+.item {
+    $accent-color: #00897B;
+    $secondary-color: #80DEEA;
+    .md-layout-item {
+        height: 35px;
+        transition: 0.3s;
+        margin: 0.7em 1em;
+        padding: 0 0px !important;
+        @media(max-width: 960px) {
+            display: table;
+        }
+    }
+    .md-card-content:last-of-type {
+        padding-bottom: 1.5em;
+    }
+    .md-list {
+        display: contents !important;
+    }
+    .md-title {
+        color: black !important;
+    }
+    .md-dense {
+        color: black !important;
+    }
+    .md-list-item {
+        &.answer-list {
+            display: 100%;
+            margin-top: 4%;
+            margin-bottom: -1%;
+            @media(min-width: 1500px) {
+                margin-bottom: -2%;
+            }
+        }
+        button {
+            color: black;
+            width: 20em;
+            background-color: #00897B;
+            height: 45px;
+        }
+    }
+    .md-list-item-container {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+    .color-light {
+        background-color: rgba(255, 255, 255, 0.19) !important;
+        color: #fff !important;
+        box-shadow: none !important;
+    }
+    .text {
+        color: grey;
+        color: rgba(17, 17, 17, 0.71);
+        text-align: left;
+        margin-top: 1em;
+    }
+    .border-rounded {
+        border-radius: 0.6em;
+        top: 1em;
+    }
+    .md-accent {
+        background-color: $accent-color !important;
+    }
+    .md-secondary {
+        background-color: $secondary-color !important;
+    }
+    // custom
+    .answer-submit {
+        margin-top: 2em;
+    }
+    .md-toolbar {
+        top: 1.7em!important;
+    }
+    .right-class {
+        background-color: green !important;
+        border: 2px solid black;
+    }
+    .wrong-class {
+        background-color: red !important;
+        border: 2px solid white;
+    }
+    .true-class {
+        background-color: white !important;
+        border: 2px solid green;
+        color: green !important;
+    }
+    @media only screen and (max-width: 768px) {
+        .wide-screen-responsive {
+            display: none;
+        }
+    }
+    @media only screen and (min-width: 769px) {
+        .narrow-screen-responsive {
+            display: none;
+        }
+    }
+}
